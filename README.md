@@ -1,6 +1,6 @@
 # NERF Winterfell
 
-NERF Firmware development environment for winterfell build.
+NERF Firmware development environment for Winterfell.
 
 ## Prerequisites
 
