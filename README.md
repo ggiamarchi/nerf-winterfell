@@ -18,10 +18,16 @@ That's it !
 
 ## Build the firmware
 
-Run the build script into the vagrant VM
+SSH into the machine
 
 ```
-$ vagrant ssh nerf-build
+$ vagrant ssh
+```
+
+Run the build script
+
+```
+$ nerf-build
 ```
 
 built Linux kernel and FFS files are available in the repository home directory
@@ -29,24 +35,24 @@ built Linux kernel and FFS files are available in the repository home directory
 To build u-root only
 
 ```
-$ vagrant ssh nerf-build u-root
+$ nerf-build u-root
 ```
 
 To build Linux kernel only
 
 ```
-$ vagrant ssh nerf-build linux
+$ nerf-build linux
 ```
 
 To build NERF fss only
 
 ```
-$ vagrant ssh nerf-build ffs
+$ nerf-build ffs
 ```
 
 ## Run Linux kernel in QEMU
 
-Basically run
+Into the vagrant machine, run
 
 ```
 $ nerf-qemu
