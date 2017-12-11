@@ -71,13 +71,13 @@ fi
 
 case $1 in
     u-root)
-        echo "build u-root"
+        build_uroot
     ;;
     linux)
-        echo "build linux"
+        build_linux
     ;;
     ffs)
-        echo "build ffs"
+        build_ffs
     ;;
     *)
         exit_on_error
