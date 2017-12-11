@@ -17,7 +17,7 @@ build_linux() {
     cp /vagrant/linux_config .config
     rm -f arch/x86/boot/bzImage
     ARCH=x86_64 make -j 2 bzImage
-    cp arch/x86/boot/bzImage /vagrant nerf-kernel.bin
+    cp arch/x86/boot/bzImage /vagrant/nerf-kernel.bin
 }
 
 build_ffs() {
@@ -52,18 +52,25 @@ build() {
     build_ffs
 }
 
-exitOnError() {
+exit_on_error() {
     echo "Error..."
     echo "Usage: nerf-build u-root|linux|ffs"
     exit 1
 }
 
+success() {
+    set +x
+    echo -e "\n### Success ###\n"
+    exit 0
+}
+
 if [ $# -gt 1 ] ; then
-    exitOnError
+    exit_on_error
 fi 
 
 if [ $# -eq 0 ] ; then
     build
+    success
 fi 
 
 case $1 in
@@ -77,9 +84,8 @@ case $1 in
         echo "build ffs"
     ;;
     *)
-        exitOnError
+        exit_on_error
     ;;
 esac
 
-set +x
-echo -e "\n### Success ###\n"
+success
