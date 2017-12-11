@@ -2,11 +2,11 @@
 
 NERF Firmware development environment for winterfell build.
 
-# Prerequisites
+## Prerequisites
 
 You need [Vagrant](https://www.vagrantup.com/) and [Vitualbox](https://www.virtualbox.org/) in order to setup your development environment.
 
-# Environment setup
+## Environment setup
 
 Basically run
 
@@ -16,7 +16,7 @@ $ vagrant up
 
 That's it !
 
-# Build the firmware
+## Build the firmware
 
 Run the build script into the vagrant VM
 
@@ -24,7 +24,7 @@ Run the build script into the vagrant VM
 $ vagrant ssh nerf-build
 ```
 
-Output FFS file is available in the repository home directory
+built Linux kernel and FFS files are available in the repository home directory
 
 To build u-root only
 
@@ -44,7 +44,7 @@ To build NERF fss only
 $ vagrant ssh nerf-build ffs
 ```
 
-# Run Linux kernel in QEMU
+## Run Linux kernel in QEMU
 
 Basically run
 
