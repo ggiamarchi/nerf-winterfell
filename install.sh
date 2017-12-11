@@ -52,7 +52,10 @@ echo 'export PATH=$PATH:$HOME/src/MyWorkspace/BaseTools/Source/C/bin' >> ~/.bash
 
 export PATH=$PATH:$HOME/src/MyWorkspace/BaseTools/Source/C/bin
 
-# Link build script in path
+# Link build scripts into a path directory
 
 sudo ln -s /vagrant/nerf-build.sh /usr/local/bin/nerf-build
 sudo ln -s /vagrant/nerf-qemu.sh /usr/local/bin/nerf-qemu
+
+set +x
+echo "### Success ###"
