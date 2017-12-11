@@ -50,8 +50,6 @@ build -p MdeModulePkg/MdeModulePkg.dsc -t GCC5
 
 echo 'export PATH=$PATH:$HOME/src/MyWorkspace/BaseTools/Source/C/bin' >> ~/.bashrc
 
-export PATH=$PATH:$HOME/src/MyWorkspace/BaseTools/Source/C/bin
-
 # Link build scripts into a path directory
 
 sudo ln -s /vagrant/nerf-build.sh /usr/local/bin/nerf-build

@@ -22,13 +22,9 @@ build_linux() {
 
 build_ffs() {
     set -x
-    # edk2root=$HOME/src/MyWorkspace/BaseTools/Source/C/bin
 
     cd $HOME/linux
 
-    # $edk2root/GenSec -o pe32.sec arch/x86/boot/bzImage -S EFI_SECTION_PE32
-    # $edk2root/GenSec -o name.sec -S EFI_SECTION_USER_INTERFACE -n "NERF" 
-    # $edk2root/GenSec -o ver.sec -S EFI_SECTION_VERSION -n "1.0" 
     GenSec -o pe32.sec arch/x86/boot/bzImage -S EFI_SECTION_PE32
     GenSec -o name.sec -S EFI_SECTION_USER_INTERFACE -n "NERF" 
     GenSec -o ver.sec -S EFI_SECTION_VERSION -n "1.0" 
