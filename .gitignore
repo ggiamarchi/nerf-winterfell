@@ -12,3 +12,8 @@ nerf-kernel.bin
 # Built NERF UEFI Section
 #
 nerf.ffs
+
+#
+# Log files
+#
+*.log
