@@ -7,7 +7,8 @@ set -ex
 # Install some needed packages
 
 sudo apt update
-sudo apt install -y bc build-essential lzma git mercurial uuid-dev iasl git gcc-5 nasm git mercurial
+sudo apt install -y bc build-essential lzma git mercurial \
+                       uuid-dev iasl git gcc-5 nasm qemu
 
 # Install Go
 
