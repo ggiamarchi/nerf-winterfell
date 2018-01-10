@@ -13,7 +13,7 @@ sudo apt install -y bc build-essential lzma git mercurial \
 # Install Go
 
 sudo rm -rf /usr/local/go $HOME/gopath
-wget https://redirector.gvt1.com/edgedl/go/go1.9.2.linux-amd64.tar.gz 2>/dev/null
+wget https://dl.google.com/go/go1.9.2.linux-amd64.tar.gz 2>/dev/null
 sudo tar -C /usr/local -xzf go1.9.2.linux-amd64.tar.gz
 mkdir -p $HOME/gopath
 echo 'export GOROOT=/usr/local/go'   >> ~/.bashrc
